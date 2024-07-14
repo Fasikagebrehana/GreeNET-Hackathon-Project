@@ -1,0 +1,160 @@
+.wholesignup {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signupcontainer {
+  width: 50%;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signupcontainer h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.signupcontainer p {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.inputcontainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.inputcontainer input {
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.inputcontainer .icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.signupbtn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.signupbtn:hover {
+  background-color: #45a049;
+}
+
+.or {
+  text-align: center;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.or span {
+  padding: 0 8px;
+  background: white;
+}
+
+.or::before,
+.or::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.or:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.or:not(:empty)::after {
+  margin-left: 0.5em;
+}
+
+.btn button,
+.btn2 button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn button {
+  background-color: black;
+  color: white;
+}
+
+.btn2 button {
+  border: 1px solid #6F6C8F;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.btn2 button:hover {
+  background-color: #e0e0e0;
+}
+
+.align,
+.align2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align p,
+.align2 p {
+  margin-left: 8px;
+}
+
+.signupimage {
+  width: 50%;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

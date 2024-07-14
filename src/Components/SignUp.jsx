@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faEye, faEyeSlash, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import signupimg from "../assets/images/signup.png"
+import {Link} from 'react-router-dom';
+import "./SignUp.css"
 
 function SignUp() {
   const [PasswordVisible, setPasswordVisible] = useState(false)
@@ -15,10 +19,12 @@ function SignUp() {
   }
 
   return (
-    <div>
-        <div>
+    <div className='wholesignup'>
+        <div className='signupcontainer'>
           <h1>GreeNet</h1>
+
           <form action="">
+
             <p>Email</p>
             <div className='inputcontainer'>
               <input type="email" placeholder='@username or example@gmail.com' />
@@ -35,10 +41,34 @@ function SignUp() {
               <input type={confirmPasswordVisible ? 'text' : "password"} placeholder='password'/>
               <FontAwesomeIcon icon={confirmPasswordVisible ? faEyeSlash : faEye}  className='icon' onClick={toggleConfirmPassword}/>
             </div>
-            <button>SignUp</button>
+
+            <button className='signupbtn'>SignUp</button>
             <div className='or'><span>Or</span></div>
+
+            <div className='btn'>
+              <button>
+                <div className='align'>
+                  <FontAwesomeIcon icon={faPhoneVolume} className='icons'/>
+                <p>Continue with Phone Number</p>
+                </div>
+                
+              </button>
+              </div>
+
+            <div className='btn2'>
+              <button>
+                <div className='align2'>
+                <FontAwesomeIcon icon={faGoogle} className='icons'/>
+                <p>Continue with Google</p>
+                </div>
+              </button>
+            </div>
+            <p>already have account?</p>
           </form>
         </div>
+            <div className='signupimage'>
+              <img src={signupimg} alt="" />
+            </div>
     </div>
   )
 }
