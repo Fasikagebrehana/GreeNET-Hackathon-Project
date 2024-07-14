@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+GreenNet Market Information Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
 
-## Available Scripts
+GreenNet is a Market Information Portal aimed at empowering Ethiopia's agricultural sector by providing essential real-time market data, weather updates, educational resources, and interactive maps. It serves farmers, traders, and government officials to make informed decisions and enhance their activities.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Real-Time Market Data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Market Prices: Current prices for various crops in different markets.
+Demand Trends: Analysis and forecasts of market demand for different crops.
+Trading Opportunities: Listings of available trading opportunities.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Weather Data
 
-### `npm test`
+Real-Time Updates: Current weather conditions for various agricultural regions.
+Forecasting: Weather predictions to help farmers plan their activities.
+Alerts: Notifications for severe weather conditions and important updates.
+Interactive Maps
+Market Locations: Visual representation of markets with details on prices and demand.
+Resource Locations: Locations of suppliers, buyers, and other resources.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Customizable Alerts
 
-### `npm run build`
+Price Alerts: Notifications when the price of a crop reaches a specified level.
+Weather Alerts: Notifications for upcoming weather events.
+Demand Alerts: Alerts when there is a spike in demand for specific crops.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Educational Resources
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Farming Tips: Best practices for improving crop yield and quality.
+Market Insights: Articles and guides on market trends and trading strategies.
+Video Tutorials: Visual guides on various agricultural techniques and strategies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Offline Access
 
-### `npm run eject`
+Data Download: Ability to download market data for offline use.
+Cached Data: Previously accessed data available without an internet connection.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+User Profiles
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Personalized Dashboard: Customized interface based on user type (farmer, trader, government official).
+Settings and Preferences: Options to set preferences for alerts and data display.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Target Audience
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Farmers
 
-## Learn More
+Access to real-time market prices and demand trends.
+Reliable weather data for planning activities.
+Educational resources to improve farming practices.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Traders
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Up-to-date market data to identify trading opportunities.
+Information on supply levels and demand trends.
+Direct connection with farmers to facilitate trade.
 
-### Code Splitting
+Government Officials
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Comprehensive market data for policy decisions.
+Agricultural trends to support farmers and traders.
+Data to monitor and manage the agricultural sector effectively.
 
-### Analyzing the Bundle Size
+Problem Statement
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Limited Access to Market Data: Lack of real-time information on market prices and demand trends.
+Weather-Related Challenges: Unpredictable weather impacts agricultural activities.
+Educational Gaps: Limited access to modern farming techniques and market insights.
 
-### Making a Progressive Web App
+Solution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Real-Time Market Data: Up-to-date information on prices, demand trends, and trading opportunities.
+Comprehensive Weather Data: Real-time weather updates and forecasts.
+Educational Resources: Farming tips, market insights, and video tutorials.
+Offline Access: Download and access market data offline.
 
-### Advanced Configuration
+Page Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Landing Page
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Header: Logo, Navigation Links, Sign Up / Login
+Introduction: Tagline, Brief Description, Key Features
+Testimonials: User quotes
+Call to Action: Sign-Up and Login buttons
+Footer: Links (About Us, Contact, Privacy Policy, Terms & Conditions)
 
-### `npm run build` fails to minify
+Sign-Up Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+User Registration Form: Name, Email, Password, Confirm Password
+Option to Login
+
+User Type Selection Page
+
+Prompt: "What type of user are you?"
+Options: Farmer, Trader, Government Official
+Personalization Questions Page (Optional)
+
+Questions based on user type
+
+Dashboard Pages
+
+Farmer, Trader, and Government Official Dashboards with customized data and features.
+
+Installation
+
+Clone the repository:
+Copy code
+git clone https://github.com/Fasikagebrehana/GreeNET-Hackathon-Project.git
+
+Navigate to the project directory:
+cd GreenNet
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm start
