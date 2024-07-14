@@ -1,4 +1,5 @@
 GreenNet Market Information Portal
+
 Overview
 GreenNet is a Market Information Portal aimed at empowering Ethiopia's agricultural sector by providing essential real-time market data, weather updates, educational resources, and interactive maps. It serves farmers, traders, and government officials to make informed decisions and enhance their activities.
 
