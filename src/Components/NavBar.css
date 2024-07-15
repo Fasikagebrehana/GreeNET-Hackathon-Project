@@ -1,0 +1,64 @@
+
+.listnavbar {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    height: 75px;
+    background-color: #ffff;
+    /* margin: 0; */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+  }
+
+.logo {
+    display: flex;
+    /* margin-left: 50px; */
+}
+
+.logo p{
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+
+.logo img {
+    margin-top: 23px;
+    margin-right: 5px;
+}
+ul{
+    display: flex;
+
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+
+}
+.btns {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.btns button{
+    width: 109px;
+    cursor: pointer;
+    height: 47px;
+    padding: 12px 32.5px 12px 32.5px;
+    border-radius: 16px;
+    border: 1px;
+}
+
+.signupbtns {
+    background-color: #34C759;
+    color: white;
+}
