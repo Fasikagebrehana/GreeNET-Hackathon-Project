@@ -20,7 +20,7 @@
 }
 
 .signupcontainer h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   font-size: 28px;
   font-weight: 600;
   text-align: center;
@@ -157,4 +157,26 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .wholesignup {
+      flex-direction: row;
+      height: 700px;
+  }
+
+  .signupcontainer {
+      width: 50%;
+      border-radius: 24px 0 0 24px;
+  }
+
+  .signupimage {
+      width: 50%;
+      height: 100%;
+      border-radius: 0 24px 24px 0;
+  }
+
+  .signupimage img {
+      height: 100%;
+  }
 }
