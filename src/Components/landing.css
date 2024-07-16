@@ -22,6 +22,7 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 90px;
+    margin-bottom: 50px;
 }
 
 .headline h1 {
@@ -57,17 +58,21 @@ text-align: center;
 
 }
 
-.headline button {
+.getstarted {
     width: 168px;
     height: 55px;
     padding: 16px 32.5px 16px 32.5px;
     gap: 8px;
+    margin-top: 1000px;
+    /* margin-bottom: 100px; */
+    top: 35%;
     border: #29BB49;
     border-radius: 24px;
     background-color: #29BB49;
     color: white;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .headline span{
@@ -75,7 +80,7 @@ text-align: center;
 }
 
 .dashboardimg {
-    margin-top: 30px;
+    margin-top: 100px;
     /* width: 957.77px;
     height: 712.43px; */
     /* gap: 0px; */

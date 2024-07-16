@@ -16,22 +16,23 @@ body {
   
   .logo {
     display: flex;
-    align-items: center;
-  }
-  
-  .logo p {
+    /* margin-left: 50px; */
+}
+
+.logo p{
     font-family: Raleway;
     font-size: 24px;
     font-weight: 600;
     line-height: 20px;
     text-align: center;
-    margin-left: 10px;
-  }
-  
-  .logo img {
+
+}
+
+
+.logo img {
     margin-top: 23px;
     margin-right: 5px;
-  }
+}
   
   ul {
     display: flex;

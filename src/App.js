@@ -4,7 +4,7 @@ import LandingPage from "./Components/LandingPage";
 import NavBar from "./Components/NavBar";
 import SignUp from "./Components/SignUp";
 import SignIn from "./Components/SignIn";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

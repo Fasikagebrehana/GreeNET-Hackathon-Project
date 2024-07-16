@@ -17,25 +17,23 @@ function NavBar() {
     navigate('/signup')
   }
   return (
-    <div>
-      <div className='listnavbar'>
-        <div className='logo'>
-          <img src={logo} alt="logo" style={{ width: '20px', height: '20px' }} />
-          <p>GreeNet.</p>
-        </div>
-        <ul>
-        <li><a href="#home">Home</a></li>
-          <li><a href="#dashboard">Dashboard</a></li>
-          <li><a href="#howitworks">How It Works</a></li>
-          <li><a href="#help">Help</a></li>
-          <ul><FontAwesomeIcon icon={faSearch} className='icon' style={{color:"#34C759"}}/></ul>
-        </ul>
-        <div className='btns'>
-          <button onClick={handleSignin}>Login</button>
-          <button className='signupbtns' onClick={handleSignup}>SignUp</button>
-        </div>
-      </div>
+    <div className='listnavbar'>
+    <div className='logo'>
+      <img src={logo} alt="logo" style={{ width: '20px', height: '20px' }} />
+      <p>GreeNet.</p>
     </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#howitworks">How It Works</a></li>
+      <li><a href="#help">Help</a></li>
+      <li><FontAwesomeIcon icon={faSearch} className='icon' style={{ color: "#34C759" }} /></li>
+    </ul>
+    <div className='btns'>
+      <Link to="/sign-in"><button>Login</button></Link>
+      <Link to="/sign-up"><button className='signupbtns'>SignUp</button></Link>
+    </div>
+  </div>
   )
 }
 
