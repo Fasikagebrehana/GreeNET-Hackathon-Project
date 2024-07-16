@@ -70,7 +70,7 @@ function SignIn() {
 					</div>
 					<div className="signin_link">
 						<p>Already have account?</p>
-						<a href="#">SignIn</a>
+						<a href="#">Sign In</a>
 					</div>
 				</form>
 			</div>

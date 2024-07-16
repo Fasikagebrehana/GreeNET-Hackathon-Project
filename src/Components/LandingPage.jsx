@@ -33,16 +33,18 @@ const testimonials = [
     rating: 4,
   },
 ];
+
+
 function LandingPage() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+      const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
-  };
+      const prevTestimonial = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
+      };
 
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
-  };
+      const nextTestimonial = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
+      };
   return (
     <div className='landingpage'>
         <div className='content'>
@@ -58,7 +60,7 @@ function LandingPage() {
                 <img src={vectorimg1} alt="leaf" />
             </div>
 
-            <div className='dashboardimg'>
+            <div className='dashboardimg' id='dashboard'>
                 <img src={dashimg} alt="" />
             </div>
 
@@ -105,7 +107,7 @@ function LandingPage() {
       </div>
     </div>
 
-    <div className="how-it-works">
+    <div className="how-it-works" id='howitworks'>
       <h2>How It Works</h2>
       <hr className='l' />
       <div className="curve-container">
