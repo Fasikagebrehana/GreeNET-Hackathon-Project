@@ -7,6 +7,7 @@ import SignIn from "./Components/SignIn";
 function App() {
 	return (
 		<div className="App">
+			<SignIn />
 			<NavBar />
 			<LandingPage />
 		</div>
