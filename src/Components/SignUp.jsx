@@ -63,7 +63,8 @@ function SignUp() {
                 </div>
               </button>
             </div>
-            <p>already have account?</p>
+            <p>already have account? <a href="#">SignIn</a></p>
+
           </form>
         </div>
             <div className='signupimage'>

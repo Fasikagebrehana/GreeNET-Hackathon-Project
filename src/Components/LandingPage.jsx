@@ -8,6 +8,7 @@ import { faChartLine, faUsers ,faChartBar, faCloudSunRain, faMapMarkedAlt } from
 import { ReactComponent as Curve } from '../assets/images/curve.svg'
 import { useState } from 'react'
 import testimonialimg from '../assets/images/testimonial.png'
+import Footer from './Footer'
 
 const testimonials = [
   {
@@ -164,8 +165,6 @@ function LandingPage() {
       <button className="carousel-button" onClick={nextTestimonial}>&gt;</button>
     </div>
     </div>
-
-
             
         </div>
     </div>
