@@ -1,11 +1,14 @@
 body {
     margin: 0;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .landingpage {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     background: linear-gradient(180deg, rgba(41, 187, 73, 0.08) 60.17%, rgba(41, 187, 73, 0.0048) 92.49%);
 }
 
@@ -93,3 +96,311 @@ text-align: center;
     border: 4px solid #29BB49;
     border-radius: 5px;
 }
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.info-card {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    position: relative; 
+    margin: 10px;
+    box-sizing: border-box; 
+    margin-top: 70px;
+}
+
+.info-card .icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid;
+}
+
+.info-card .market-data {
+    background-color: #e3f4e0;
+    border-color: #46db46;
+}
+
+.info-card .weather-forecasts {
+    background-color: #e0f2f9;
+    border-color: #00aaff;
+}
+
+.info-card .interactive-maps {
+    background-color: #f9e0ef;
+    border-color: #ff007f;
+}
+
+.info-card .sms-market-data {
+    background-color: #f3e8ff;
+    border-color: #a259ff;
+}
+
+.info-card .community-support {
+    background-color: #e6efff;
+    border-color: #007bff;
+}
+
+.info-card .icon svg {
+    width: 30px;
+    height: 30px;
+    color: #000;
+}
+
+.info-card h3 {
+    margin: 40px 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* .info-cards > .info-card:nth-child(3n+1) {
+    margin-left: auto;
+}
+
+.info-cards > .info-card:nth-child(3n) {
+    margin-right: auto;
+} */
+
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+    
+  }
+  
+  .how-it-works h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .curve-container {
+    position: relative;
+    width: 100%;
+    max-width: 902px;
+    margin: 0 auto;
+    overflow: visible;
+  }
+  
+  .curve {
+    width: 100%;
+    height: auto;
+  }
+  
+  .steps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+  
+  .step {
+    position: absolute;
+    text-align: center;
+    pointer-events: all;
+  }
+  
+  .step-1 {
+    top: 150px;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  
+  .step-2 {
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .step-3 {
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .circle {
+    width: 65px;
+    height: 65px;
+    background-color: #29BB49;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto 10px;
+  }
+  
+  .step-content {
+    margin-top: 20px;
+    max-width: 200px;
+  }
+  
+  .step p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .step span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #666;
+  }
+  
+
+
+
+  .testimonials{
+    background: #e7faeb;
+    margin-top: 100px;
+
+  }
+
+  .titletestimony {
+    /* margin: 20px; */
+    padding: 48px;
+  }
+
+  .titletestimony p{
+    font-family: DM Sans;
+    font-size: 36px;
+    font-weight: 700;
+    /* line-height: 46.87px; */
+    /* margin-top: 40px; */
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .carousel-button {
+    background: rgb(164, 241, 164);
+    border: 1px;
+    border-radius: 25%;
+    margin: 20px;
+    border-color: #d0f5d0;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 20px;
+    color: #333;
+  }
+  
+  .carousel-testimonials {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+  }
+  
+  .testimonial {
+    flex: 0 0 33.33%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 10px;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .testimonial-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .testimonial-content {
+    margin-top: 10px;
+  }
+  
+  .testimonial-quote {
+    font-style: italic;
+    margin: 10px 0;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .testimonial-role {
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .testimonial-reviews .star {
+    color: #ddd;
+  }
+  
+  .testimonial-reviews .star.filled {
+    color: #ffcc00;
+  }
+  
+  .testimonial.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .testimonial.inactive {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-dot.active {
+    background: #333;
+  }
