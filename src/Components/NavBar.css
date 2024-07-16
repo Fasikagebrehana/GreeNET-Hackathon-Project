@@ -19,7 +19,7 @@ body{
 }
 
 .logo p{
-    font-family: Raleway;
+    font-family: "Raleway",sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 20px;
@@ -29,13 +29,13 @@ body{
 
 
 .logo img {
-    margin-top: 23px;
+    margin-top: -1px;
     margin-right: 5px;
 }
 ul{
     display: flex;
 
-    font-family: DM Sans;
+    font-family: 'DM Sans';
     font-size: 18px;
     font-weight: 500;
     line-height: 23.44px;
@@ -50,6 +50,8 @@ ul{
 }
 
 .btns button{
+    font-family: 'Raleway';
+    font-size: 98%;
     width: 109px;
     cursor: pointer;
     height: 47px;
@@ -59,6 +61,7 @@ ul{
 }
 
 .signupbtns {
+    text-align: center;
     background-color: #34C759;
     color: white;
 }

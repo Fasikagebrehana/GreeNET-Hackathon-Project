@@ -63,7 +63,7 @@ function LandingPage() {
             </div>
 
             <div className='landingcontainer'>
-                <p>Why Choose GreenNet?</p>
+                <p style={{fontFamily:'DM Sans'}}>Why Choose GreenNet?</p>
                 <hr className='l' />
             </div>
 
@@ -72,35 +72,35 @@ function LandingPage() {
         <div className="icon market-data">
           <FontAwesomeIcon icon={faChartLine} />
         </div>
-        <h3>Real-Time Market Data</h3>
+        <h3 style={{fontFamily:'DM Sans'}}>Real-Time Market Data</h3>
         <p>Stay updated with the latest market prices and trends for your crops.</p>
       </div>
       <div className="info-card">
         <div className="icon weather-forecasts">
           <FontAwesomeIcon icon={faCloudSunRain} />
         </div>
-        <h3>Weather Forecasts</h3>
+        <h3 style={{fontFamily:'DM Sans'}}>Weather Forecasts</h3>
         <p>Plan your activities with accurate weather predictions and alerts.</p>
       </div>
       <div className="info-card">
         <div className="icon interactive-maps">
           <FontAwesomeIcon icon={faMapMarkedAlt} />
         </div>
-        <h3>Interactive Maps</h3>
+        <h3 style={{fontFamily:'DM Sans'}}>Interactive Maps</h3>
         <p>Explore markets and resources with detailed maps.</p>
       </div>
       <div className="info-card">
         <div className="icon sms-market-data">
           <FontAwesomeIcon icon={faChartLine} />
         </div>
-        <h3>SMS based Market Data</h3>
+        <h3 style={{fontFamily:'DM Sans'}}>SMS based Market Data</h3>
         <p>Receive instant SMS alerts on market prices and trends.</p>
       </div>
       <div className="info-card">
         <div className="icon community-support">
           <FontAwesomeIcon icon={faUsers} />
         </div>
-        <h3>Community Support</h3>
+        <h3 style={{fontFamily:'DM Sans'}}>Community Support</h3>
         <p>Join a network of users and experts for advice and collaboration.</p>
       </div>
     </div>

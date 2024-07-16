@@ -18,6 +18,28 @@ function SignUp() {
     setConfirmPasswordVisible(!confirmPasswordVisible)
   }
 
+  const onGoogleLoginSuccess = () => {
+    const GOOGLE_AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
+    const REDIRECT_URI = 'auth/api/login/google/';
+  
+    const scope = [
+      'https://www.googleapis.com/auth/userinfo.email',
+      'https://www.googleapis.com/auth/userinfo.profile'
+    ].join(' ');
+  
+    const params = {
+      response_type: 'code',
+      client_id: process.env.GOOGLE_OAUTH2_CLIENT_ID,
+      redirect_uri: `${process.env.BASE_API_URL}/${REDIRECT_URI}`,
+      prompt: 'select_account',
+      access_type: 'offline',
+      scope
+    };
+  
+    const urlParams = new URLSearchParams(params).toString();
+    window.location = `${GOOGLE_AUTH_URL}?${urlParams}`;
+  };
+
   return (
     <div className='wholesignup'>
         <div className='signupcontainer'>
@@ -33,7 +55,7 @@ function SignUp() {
             
             <p>Password</p>
             <div className='inputcontainer'>
-              <input type={PasswordVisible ? 'text' : "password"} placeholder='password'/>
+              <input type={PasswordVisible ? 'text' : "password"} placeholder='"Insert Password Here"'/>
               <FontAwesomeIcon icon={PasswordVisible ? faEyeSlash : faEye}  className='icon' onClick={togglePassword}/>
             </div>
             <p>Confirm Password</p>
@@ -56,7 +78,7 @@ function SignUp() {
               </div>
 
             <div className='btn2'>
-              <button>
+              <button onClick={onGoogleLoginSuccess}>
                 <div className='align2'>
                 <FontAwesomeIcon icon={faGoogle} className='icons'/>
                 <p>Continue with Google</p>

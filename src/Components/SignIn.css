@@ -110,7 +110,7 @@
 	margin-left: 0.5em;
 }
 
-.btn button,
+.btn button,.btn3 button,
 .btn2 button {
 	width: 100%;
 	padding: 12px;
@@ -131,23 +131,30 @@
 }
 
 .btn2 button {
+	margin-top: 5%;
 	border: 1px solid #6f6c8f;
 	background-color: #f9f9f9;
 	color: black;
+}
+.btn3 button {
+	margin-top: 5%;
+	border: 1px solid #f9f9f9;
+	background-color: #4caf50;
+	color: whitesmoke;
 }
 
 .btn2 button:hover {
 	background-color: #e0e0e0;
 }
 
-.align,
+.align,.align3,
 .align2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.align p,
+.align p, .align3,
 .align2 p {
 	margin-left: 8px;
 }
