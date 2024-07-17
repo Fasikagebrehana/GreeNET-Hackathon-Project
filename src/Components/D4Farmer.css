@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+body {
+	margin: 0;
+	line-height: normal;
+}
+
+.personalization-4-1-icon {
+	width: 121px;
+	position: relative;
+	height: 120px;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+.movie-card {
+	align-self: stretch;
+	width: 303px;
+	border-radius: 24px;
+	background-color: rgba(41, 187, 73, 0.06);
+	border: 1px solid #29bb49;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.almost-finished {
+	position: relative;
+	font-weight: 600;
+}
+.trending {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.discover-a-diverse {
+	align-self: stretch;
+	position: relative;
+	font-size: 18px;
+	font-family: "DM Sans";
+	color: #6f6c8f;
+}
+.trending-parent,
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.trending-parent {
+	align-self: stretch;
+	align-items: flex-start;
+	gap: 12px;
+}
+.wrapper {
+	border-radius: 9px;
+	background-color: #29bb49;
+	align-items: center;
+	padding: 9px 18px;
+}
+.frame-child {
+	flex: 1;
+	position: relative;
+	border-top: 3px solid #29bb49;
+	box-sizing: border-box;
+	height: 3px;
+}
+.frame-group,
+.progress {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.frame-group {
+	flex: 1;
+	align-items: center;
+}
+.progress {
+	width: 573px;
+	align-items: flex-start;
+	font-size: 18px;
+	color: #fff;
+}
+.frame-parent {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 36px;
+}
+.movie-card-parent {
+	width: 900px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 24px;
+}
+.what-types-of {
+	align-self: stretch;
+	width: 508px;
+	position: relative;
+	font-weight: 600;
+	display: inline-block;
+	flex-shrink: 0;
+}
+.what-types-of-crops-do-you-gro-wrapper {
+	align-self: stretch;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 6px;
+}
+.frame-child1 {
+	width: 16px;
+	position: relative;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	box-sizing: border-box;
+	height: 16px;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+.frame-wrapper {
+	align-self: stretch;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+.maize {
+	position: relative;
+}
+.maize-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.frame-parent3 {
+	width: 120px;
+	border-radius: 9px;
+	background-color: #fff;
+	border: 0.5px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 12px;
+	gap: 12px;
+}
+.frame-parent1,
+.frame-parent2,
+.frame-parent3,
+.frame-wrapper1 {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+}
+.frame-wrapper1 {
+	height: 16px;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.frame-parent1,
+.frame-parent2 {
+	justify-content: center;
+}
+.frame-parent2 {
+	flex-direction: row;
+	padding: 2px 168px;
+	gap: 48px;
+	font-size: 16px;
+	font-family: "DM Sans";
+}
+.frame-parent1 {
+	flex-direction: column;
+	gap: 18px;
+}
+.personalization-inner {
+	width: 900px;
+	border-radius: 24px;
+	background-color: rgba(41, 187, 73, 0.05);
+	border: 0.8px solid rgba(41, 187, 73, 0.05);
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 64px 90px;
+	font-size: 31.5px;
+	font-family: Raleway;
+}
+.right-1-icon {
+	width: 18px;
+	position: relative;
+	height: 18px;
+	overflow: hidden;
+	flex-shrink: 0;
+	object-fit: contain;
+}
+.right-1-group,
+.right-1-parent {
+	width: 114px;
+	border-radius: 9px;
+	box-sizing: border-box;
+	overflow: hidden;
+	flex-shrink: 0;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 24px;
+	gap: 6px;
+}
+.right-1-parent {
+	background-color: #fff;
+	border: 0.5px solid rgba(0, 0, 0, 0.2);
+	display: none;
+}
+.right-1-group {
+	background-color: rgba(41, 187, 73, 0.03);
+	border: 1px solid #29bb49;
+	display: flex;
+	color: #29bb49;
+}
+.right-1-icon2 {
+	width: 23px;
+	position: relative;
+	height: 23px;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+.finish-parent,
+.frame-parent7 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.finish-parent {
+	border: none;
+	border-radius: 12px;
+	background-color: #29bb49;
+	overflow: hidden;
+	justify-content: center;
+	padding: 12px 24px;
+	gap: 8px;
+	color: #fff;
+}
+.frame-parent7 {
+	align-self: stretch;
+	justify-content: space-between;
+	padding: 2px 24px;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.5);
+	font-family: "DM Sans";
+}
+.d-4-farmer,
+.personalization {
+	backdrop-filter: blur(22.5px);
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.personalization {
+	border-radius: 24px;
+	border: 0.5px solid #29bb49;
+	justify-content: flex-start;
+	padding: 32px;
+	gap: 32px;
+}
+.d-4-farmer {
+	width: 100%;
+	position: relative;
+	height: 650px;
+	overflow: hidden;
+	justify-content: center;
+	padding: 15px 0 5px;
+	box-sizing: border-box;
+	text-align: left;
+	font-size: 36px;
+	color: #000;
+	font-family: Roboto;
+}
+.frame-wrapper {
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: border-color 0.3s ease;
+}
+
+.active {
+	background-color: #29bb49;
+}
+
+.frame-parent3:hover {
+	border-color: #8bc34a;
+	background-color: rgba(41, 187, 73, 0.05);
+}
+
+.selected {
+	border-color: #4caf50; /* Adjust the color as needed */
+	background-color: #e8f5e9; /* Adjust the background color as needed */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+	.personalization-inner {
+		width: 100%;
+		padding: 32px;
+		font-size: 24px;
+	}
+	.movie-card-parent {
+		flex-direction: column;
+		width: 100%;
+		gap: 16px;
+	}
+	.frame-parent2 {
+		flex-direction: column;
+		padding: 0;
+		gap: 16px;
+	}
+	.frame-parent3 {
+		width: 100%;
+		padding: 8px;
+	}
+	.progress {
+		width: 100%;
+	}
+	.frame-child {
+		width: 100%;
+	}
+	.frame-group {
+		width: 100%;
+	}
+	.finish-parent,
+	.right-1-group {
+		width: 20%;
+		justify-content: space-between;
+	}
+	.d-4-farmer {
+		height: auto;
+		padding: 15px;
+	}
+}
