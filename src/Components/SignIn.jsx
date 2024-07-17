@@ -64,7 +64,7 @@ function SignIn() {
             <FontAwesomeIcon icon={PasswordVisible ? faEyeSlash : faEye} className="icon" onClick={togglePassword} />
           </div>
 
-          <button className="signinbtn">Login</button>
+          <Link to='/homenav' className="signinbtn">Login</Link>
           <div className="or">
             <span>Or</span>
           </div>
@@ -79,7 +79,7 @@ function SignIn() {
           </div>
 
           <div className="btn2">
-            <button onClick={onGoogleLoginSuccess}>
+            <button >
               <div className="align2">
                 <FontAwesomeIcon icon={faGoogle} className="icons" />
                 <p>Continue with Google</p>

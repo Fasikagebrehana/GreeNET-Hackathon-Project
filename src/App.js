@@ -14,19 +14,18 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <HomeNavbar />
-        <div className="app">
-          <Sidebar />
-          <div className="content">
-            <Routes>
-              <Route path="/" element={<Overview />} />
-              {/* Add more routes as necessary */}
-              {/* <Route path="/sign-in" element={<SignIn />} />
-                <Route path="/sign-up" element={<SignUp />} /> */}
-            </Routes>
-          </div>
-          <Weekly />
-        </div>
+        <NavBar />
+        {/* <div className="app"> */}
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          {/* Add more routes as necessary */}
+          <Route path="/homenav" element={<HomeNavbar />} />
+          <Route path="/sidebar" element={<Sidebar />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/homepage" element={<Overview />} />
+        </Routes>
+        {/* </div> */}
       </Router>
     </div>
   );

@@ -8,6 +8,7 @@ import { faArrowDown, faArrowUp, faCloud, faL, faSun, faTemperatureHigh, faTint 
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { faUps } from '@fortawesome/free-brands-svg-icons';
+import Weekly from './Weekly';
 
 function Overview() {
   return (
@@ -65,6 +66,7 @@ function Overview() {
       <MarketStatus />
       <CropList />
       <InteractiveMap />
+      <Weekly/>
     </div>
   );
 }
