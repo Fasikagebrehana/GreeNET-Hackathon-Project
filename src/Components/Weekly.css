@@ -1,0 +1,102 @@
+/* Weekly.css */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  width: 372px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weekly-overview .header {
+  margin-bottom: 20px;
+}
+
+.weekly-overview h2,
+.demanding-crops h2,
+.alerts h2,
+.farming-tip h2,
+.market-prices h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.weekly-btn,
+.view-details-btn,
+.view-alerts-btn,
+.read-more-btn {
+  background-color: #d3f9d8;
+  border: none;
+  color: #28a745;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weekly-btn:hover,
+.view-details-btn:hover,
+.view-alerts-btn:hover,
+.read-more-btn:hover {
+  background-color: #c3f0c5;
+}
+
+.chart,
+.bar-chart {
+  margin: 20px 0;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: #d3f9d8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.price-icon::before {
+  content: '💰';
+}
+
+.weather-icon::before {
+  content: '☁️';
+}
+
+.alert-title {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.farming-tip img,
+.market-prices img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

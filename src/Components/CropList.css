@@ -1,0 +1,73 @@
+.croplist-container {
+  padding: 20px;
+  background-color: #f8fdf8;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.croplist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.croplist-table th, .croplist-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.croplist-table th {
+  background-color: #e7f7e7;
+}
+
+.croplist-table td {
+  border-bottom: 1px solid #e7f7e7;
+}
+
+.croplist-table tr:last-child td {
+  border-bottom: none;
+}
+
+.croplist-table td span {
+  color: gray;
+  font-size: 12px;
+}
+
+.chart {
+  width: 50px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.chart.up {
+  background: linear-gradient(to right, #b2f5b2, #2ebf2e);
+}
+
+.chart.down {
+  background: linear-gradient(to right, #f5b2b2, #bf2e2e);
+}
+
+.up {
+  color: green;
+}
+
+.down {
+  color: red;
+}
+
+.view-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-details a {
+  text-decoration: none;
+  color: #2ebf2e;
+  font-weight: bold;
+}

@@ -1,0 +1,68 @@
+.overview {
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: calc(100vh - 60px);
+  width: 600px;
+}
+
+.overview-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.overview-card {
+  /* background-color: #f2f7f4; */
+  color: #82e795;
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.overview-card h3 {
+  /* margin: 0 0 10px; */
+  font-size: 16px;
+  color: #0e0d0d;
+}
+
+.overview-card p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.weather-icon {
+  font-size: 3em;
+  margin: 20px 0;
+}
+
+.circular-progress-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+}
+
+.change-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.change-indicator.up {
+  background-color: #d3f9d8;
+  /* width: 20px; */
+  color: #28a745;
+}
+
+.change-indicator.down {
+  background-color: #ffcccc;
+  color: #d9534f;
+}

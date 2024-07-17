@@ -1,0 +1,78 @@
+.market-status {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.weekly-btn {
+  background-color: #f0f4f8;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.subtext {
+  font-size: 0.9em;
+  color: #888;
+  margin: 10px 0;
+}
+
+.status-content {
+  position: relative;
+}
+
+.price-tag {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.price-tag p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.price-tag span {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.view-details-btn {
+  background-color: #d8f7d8;
+  color: #32b871;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.view-details-btn:hover {
+  background-color: #32b871;
+  color: #fff;
+}

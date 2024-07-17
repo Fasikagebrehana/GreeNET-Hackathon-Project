@@ -4,20 +4,30 @@ import LandingPage from "./Components/LandingPage";
 import NavBar from "./Components/NavBar";
 import SignUp from "./Components/SignUp";
 import SignIn from "./Components/SignIn";
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import HomeNavbar from "./Components/HomeNavbar";
+import Sidebar from "./Components/Sidebar";
+import Overview from "./Components/Overview";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Weekly from "./Components/Weekly";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/sign-in" element={<SignIn />} />
-          <Route path="/sign-up" element={<SignUp />} />
-        </Routes>
-        {/* <Footer /> */}
-      </BrowserRouter>
+      <Router>
+        <HomeNavbar />
+        <div className="app">
+          <Sidebar />
+          <div className="content">
+            <Routes>
+              <Route path="/" element={<Overview />} />
+              {/* Add more routes as necessary */}
+              {/* <Route path="/sign-in" element={<SignIn />} />
+                <Route path="/sign-up" element={<SignUp />} /> */}
+            </Routes>
+          </div>
+          <Weekly />
+        </div>
+      </Router>
     </div>
   );
 }
