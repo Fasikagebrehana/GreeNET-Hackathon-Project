@@ -21,27 +21,27 @@ function SignIn() {
 //   };
   
 
-  const onGoogleLoginSuccess = () => {
-    const GOOGLE_AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
-    const REDIRECT_URI = 'auth/api/login/google/';
+  // const onGoogleLoginSuccess = () => {
+  //   const GOOGLE_AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
+  //   const REDIRECT_URI = 'auth/api/login/google/';
 
-    const scope = [
-      'https://www.googleapis.com/auth/userinfo.email',
-      'https://www.googleapis.com/auth/userinfo.profile'
-    ].join(' ');
+  //   const scope = [
+  //     'https://www.googleapis.com/auth/userinfo.email',
+  //     'https://www.googleapis.com/auth/userinfo.profile'
+  //   ].join(' ');
 
-    const params = {
-      response_type: 'code',
-      client_id: process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_ID,
-      redirect_uri: `${process.env.REACT_APP_BASE_API_URL}/${REDIRECT_URI}`,
-      prompt: 'select_account',
-      access_type: 'offline',
-      scope
-    };
+  //   const params = {
+  //     response_type: 'code',
+  //     client_id: process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_ID,
+  //     redirect_uri: `${process.env.REACT_APP_BASE_API_URL}/${REDIRECT_URI}`,
+  //     prompt: 'select_account',
+  //     access_type: 'offline',
+  //     scope
+  //   };
 
-    const urlParams = new URLSearchParams(params).toString();
-    window.location = `${GOOGLE_AUTH_URL}?${urlParams}`;
-  };
+  //   const urlParams = new URLSearchParams(params).toString();
+  //   window.location = `${GOOGLE_AUTH_URL}?${urlParams}`;
+  // };
 
   return (
     <div className="wholesignin">
