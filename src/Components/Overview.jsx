@@ -1,18 +1,36 @@
 import React from 'react';
 import './overview.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown, faArrowUp, faCloud, faTemperatureHigh, faTint } from '@fortawesome/free-solid-svg-icons';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import MarketStatus from './MarketStatus';
 import CropList from './CropList';
 import InteractiveMap from './InteractiveMap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp, faCloud, faL, faSun, faTemperatureHigh, faTint } from '@fortawesome/free-solid-svg-icons';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
-import { faUps } from '@fortawesome/free-brands-svg-icons';
 import Weekly from './Weekly';
+import Dashboard from './Dashboard';
+import HomeNavbar from './HomeNavbar';
+import Sidebar from './Sidebar';
 
 function Overview() {
   return (
     <div className="overview">
+      <div className="column">
+        <Sidebar />
+      </div>
+      <div className="column">
+        <OverviewContent />
+      </div>
+      <div className="column">
+        <Weekly />
+      </div>
+    </div>
+  );
+}
+
+function OverviewContent() {
+  return (
+    <div className="overview-content">
       <div className="overview-cards">
         <div className="overview-card">
           <h3>Temperature</h3>
@@ -66,7 +84,6 @@ function Overview() {
       <MarketStatus />
       <CropList />
       <InteractiveMap />
-      <Weekly/>
     </div>
   );
 }

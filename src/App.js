@@ -1,4 +1,4 @@
-import "./App.css";
+import React from "react";
 import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
 import NavBar from "./Components/NavBar";
@@ -7,28 +7,58 @@ import SignIn from "./Components/SignIn";
 import HomeNavbar from "./Components/HomeNavbar";
 import Sidebar from "./Components/Sidebar";
 import Overview from "./Components/Overview";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import { AuthProvider, useAuth } from "./AuthContext";
 import Weekly from "./Components/Weekly";
 
+function ProtectedRoute({ children }) {
+  const { isAuthenticated } = useAuth();
+  return isAuthenticated ? children : <Navigate to="/sign-in" />;
+}
+
+function HomePageLayout() {
+  return (
+    <>
+      <HomeNavbar />
+      {/* <Sidebar /> */}
+      <Overview />
+    </>
+  );
+}
+
 function App() {
+  const { isAuthenticated } = useAuth();
   return (
     <div className="App">
       <Router>
-        <NavBar />
-        {/* <div className="app"> */}
+        {!isAuthenticated && <NavBar />}
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          {/* Add more routes as necessary */}
-          <Route path="/homenav" element={<HomeNavbar />} />
-          <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
-          <Route path="/homepage" element={<Overview />} />
+          <Route
+            path="/homepage"
+            element={
+              <ProtectedRoute>
+                <HomePageLayout />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
-        {/* </div> */}
       </Router>
     </div>
   );
 }
 
-export default App;
+export default function Root() {
+  return (
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+  );
+}
