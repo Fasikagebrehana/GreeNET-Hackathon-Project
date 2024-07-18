@@ -8,16 +8,10 @@ import MarketStatus from './MarketStatus';
 import CropList from './CropList';
 import InteractiveMap from './InteractiveMap';
 import Weekly from './Weekly';
-import Dashboard from './Dashboard';
-import HomeNavbar from './HomeNavbar';
-import Sidebar from './Sidebar';
 
 function Overview() {
   return (
     <div className="overview">
-      <div className="column">
-        <Sidebar />
-      </div>
       <div className="column">
         <OverviewContent />
       </div>

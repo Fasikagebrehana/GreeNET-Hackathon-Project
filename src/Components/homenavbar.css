@@ -1,85 +1,84 @@
 /* DashboardNavBar.css */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .brand-name {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-links li {
-    margin-right: 20px;
-  }
-  
-  .navbar-links li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-  }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon {
-    font-size: 20px;
-    color: #000;
-    margin-right: 20px;
-    cursor: pointer;
-  }
-  
-  .user-profile {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-avatar {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-  }
-  
-  .user-name {
-    font-weight: bold;
-    font-size: 14px;
-    color: #000;
-  }
-  
-  .user-email {
-    font-size: 12px;
-    color: #888;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 20px;
+  color: #34c759;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+}
+
+.user-email {
+  font-size: 12px;
+  color: #888;
+}

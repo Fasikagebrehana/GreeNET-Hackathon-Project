@@ -1,0 +1,72 @@
+/* WeatherPage.css */
+.weather-container {
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  .weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .weather-settings {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .settings-btn,
+  .filter-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .weather-region,
+  .weather-forecast,
+  .weather-insights,
+  .weather-news {
+    margin-bottom: 20px;
+  }
+  
+  .region-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .forecast-summary {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .forecast-chart {
+    margin-top: 20px;
+  }
+  
+  .insights-content,
+  .news-cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .insight,
+  .news-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  

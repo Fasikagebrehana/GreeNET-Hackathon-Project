@@ -1,49 +1,68 @@
 .sidebar {
-    width: 250px;
-    background-color: #ffffff;
-    /* height: 100%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-  }
+  position: fixed;
+  top: 76px;
+  width: 200px;
+  background-color: #ffffff;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  box-shadow: -1px -2px 5px #29bb4900;
+  border: 1px solid #29bb4945;
+  margin-top: 10px;
+  border-radius: 12px;
+}
 
-  
-  .sidebar-title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar-menu {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sidebar-item {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    width: 160px;
-    padding-left: 50px;
-    cursor: pointer;
-    color: #333;
-    transition: background-color 0.3s ease;
-    border: 0.09px #f8f8f8 solid;
-    border-radius: 10%;
-  }
-  
-  .sidebar-item:hover {
-    background-color: #29BB49;
-    color: white;
-  }
-  
-  .sidebar-item span {
-    margin-left: 10px;
-    font-size: 16px;
-  }
-  
+.sidebar-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+ul a {
+  text-decoration: none;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s ease;
+  border: 0.09px #f8f8f8 solid;
+  border-radius: 12px;
+}
+.side-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.sidebar-item:hover {
+  background-color: #29bb49;
+  color: white;
+  font-size: 24px;
+}
+.x:hover .ic {
+  color: white;
+  font-size: 24px;
+}
+.sidebar-item svg {
+  stroke: black;
+}
+.sidebar-item:hover svg {
+  stroke: white;
+  font-size: 24px;
+}
+
+.sidebar-item span {
+  margin-left: 10px;
+  font-size: 16px;
+}

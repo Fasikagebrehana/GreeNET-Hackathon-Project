@@ -1,13 +1,18 @@
 import React from "react";
 import logo from "../assets/images/logo.svg";
+import profile from "../assets/images/profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSearch,
+  faBell,
+  faCaretDown,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import "./LandingPage";
 import { useNavigate } from "react-router-dom";
 
-function NavBar() {
+function NavBarLog() {
   const navigate = useNavigate();
   const handleSignin = () => {
     navigate("/signin");
@@ -43,16 +48,20 @@ function NavBar() {
           />
         </li>
       </ul>
-      <div className="btns">
-        <Link className="link-login" to="/sign-in">
-          <button className="login">Login</button>
-        </Link>
-        <Link className="link-signup" to="/sign-up">
-          <button className="signupbtns">SignUp</button>
-        </Link>
+
+      <div className="navbar-right">
+        <FontAwesomeIcon icon={faBell} className="icon" />
+        <div className="user-profile">
+          <img src={profile} alt="User" className="user-avatar" />
+          <div className="user-info">
+            <span className="user-name">Natnael Meseret</span>
+            <span className="user-email">example@gmail.com</span>
+          </div>
+          <FontAwesomeIcon icon={faCaretDown} className="icon" />
+        </div>
       </div>
     </div>
   );
 }
 
-export default NavBar;
+export default NavBarLog;

@@ -1,14 +1,22 @@
-import React from 'react';
-import './MarketStatus.css';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import React from "react";
+import "./MarketStatus.css";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 const data = [
-  { name: 'Mon', value: 100 },
-  { name: 'Tue', value: 120 },
-  { name: 'Wed', value: 200 },
-  { name: 'Thu', value: 150 },
-  { name: 'Fri', value: 230 },
-  { name: 'Sat', value: 280 }
+  { name: "Mon", value: 100 },
+  { name: "Tue", value: 120 },
+  { name: "Wed", value: 200 },
+  { name: "Thu", value: 150 },
+  { name: "Fri", value: 230 },
+  { name: "Sat", value: 280 },
 ];
 
 const MarketStatus = () => {
@@ -18,7 +26,9 @@ const MarketStatus = () => {
         <h3>Market Status</h3>
         <button className="weekly-btn">Weekly</button>
       </div>
-      <p className="subtext">Your sales performance is 30% better compare to last month</p>
+      <p className="subtext">
+        Maize Crop Sales Performance Improved by 30% Compared to Last Month
+      </p>
       <div className="status-content">
         <ResponsiveContainer width="100%" height={200}>
           <LineChart data={data}>
@@ -26,7 +36,13 @@ const MarketStatus = () => {
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
-            <Line type="monotone" dataKey="value" stroke="#32b871" strokeWidth={2} dot={{ stroke: '#32b871', strokeWidth: 2, r: 5 }} />
+            <Line
+              type="monotone"
+              dataKey="value"
+              stroke="#32b871"
+              strokeWidth={2}
+              dot={{ stroke: "#32b871", strokeWidth: 2, r: 5 }}
+            />
           </LineChart>
         </ResponsiveContainer>
         <div className="price-tag">

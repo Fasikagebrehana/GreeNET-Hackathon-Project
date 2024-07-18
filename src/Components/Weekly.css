@@ -5,8 +5,8 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background-color: #f5f5f5;
-  width: 372px;
+  /* background-color: #f5f5f5; */
+  /* /* width: 436px; */
 }
 
 .card {
@@ -31,7 +31,7 @@
 .alerts h2,
 .farming-tip h2,
 .market-prices h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
@@ -39,19 +39,19 @@
 .view-details-btn,
 .view-alerts-btn,
 .read-more-btn {
-  background-color: #d3f9d8;
   border: none;
-  color: #28a745;
-  padding: 10px 20px;
+  color: #29bb49;
+  padding: 13px 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .weekly-btn:hover,
 .view-details-btn:hover,
 .view-alerts-btn:hover,
 .read-more-btn:hover {
-  background-color: #c3f0c5;
+  background-color: #29bb49d5;
 }
 
 .chart,
@@ -68,7 +68,6 @@
 .icon {
   width: 30px;
   height: 30px;
-  background-color: #d3f9d8;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -77,11 +76,11 @@
 }
 
 .price-icon::before {
-  content: '💰';
+  content: "💰";
 }
 
 .weather-icon::before {
-  content: '☁️';
+  content: "☁️";
 }
 
 .alert-title {
@@ -91,7 +90,7 @@
 img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .farming-tip img,
@@ -99,4 +98,8 @@ img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+.weekly-btn {
+  background: none;
+  border: 2px solid #29bb49;
 }
